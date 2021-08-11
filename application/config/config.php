@@ -35,7 +35,7 @@ $config['base_url'] = 'https://www.studenti.famnit.upr.si/~89171015/RE';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
