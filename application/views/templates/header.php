@@ -1,10 +1,10 @@
 <html>
 	<head>
 		<title>Review Everything</title>
-		<link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css">
+		<link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css" type="text/css">
 	</head>
 	<body>
-		<nav class="navigation">
+		<nav class="navbar navbar-inverse">
 			<div class="container">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="<?php echo base_url(); ?>">Review Everything</a>
