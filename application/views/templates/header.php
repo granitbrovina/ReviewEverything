@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse">
+		<nav class="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="<?php echo base_url(); ?>">Review Everything</a>
