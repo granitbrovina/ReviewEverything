@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Review Everything</title>
-		<link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css">
+		<link rel="stylesheet" href="<?php echo base_url(); ?>/style.css">
 	</head>
 	<body>
 		<nav class="navbar navbar-inverse">
