@@ -4,12 +4,12 @@
 		<link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css" type="text/css">
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="<?php echo base_url(); ?>">Review Everything</a>
         		</div>
-        		<div id="navbar">
+        		<div class="collapse navbar-collapse" id="navbar">
 				    <div class="navbar-nav">
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>">Home</a>
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>posts">Browse</a>
