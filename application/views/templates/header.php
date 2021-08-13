@@ -9,7 +9,7 @@
 				<div class="navbar-header">
 					<a class="navbar-brand" href="<?php echo base_url(); ?>">Review Everything</a>
         		</div>
-        		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        		<div id="navbar">
 				    <div class="navbar-nav">
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>">Home</a>
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>posts">Browse</a>
