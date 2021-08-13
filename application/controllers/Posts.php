@@ -12,13 +12,13 @@
 		}
 
 		public function view($slug = NULL){
-			$data['posts'] = $this->post_model->get_posts($slug);
+			$data['post'] = $this->post_model->get_posts($slug);
 
-			if(empty($data['posts'])){
+			if(empty($data['post'])){
 				show_404();
 			}
 
-			$data['name'] = $data['posts']['name'];
+			$data['title'] = $data['post']['name'];
 
 			$this->load->view('templates/header');
 			$this->load->view('posts/index', $data);
