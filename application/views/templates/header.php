@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-inverse">
-			<div class="container">
+			
 				<div class="navbar-header">
 					<a class="navbar-brand" href="<?php echo base_url(); ?>">Review Everything</a>
         		</div>
@@ -16,6 +16,6 @@
 						<li><a href="<?php echo base_url(); ?>about">About</a></li>
 					</ul>
 				</div>
-			</div>
+			
 		</nav>
 		<div class="container">
