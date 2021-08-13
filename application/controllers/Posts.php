@@ -4,7 +4,7 @@
 			$data['title'] = 'Companies';
 
 			$data['posts'] = $this->post_model->get_posts();
-			print_r($data['posts'])
+			print_r($data['posts']);
 
 			$this->load->view('templates/header');
 			$this->load->view('posts/index', $data);
