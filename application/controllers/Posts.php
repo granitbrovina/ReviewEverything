@@ -18,7 +18,7 @@
 				show_404();
 			}
 
-			$data['name'] = $data['posts']['name'];
+			$data['name'] = $data['post']['name'];
 
 			$this->load->view('templates/header');
 			$this->load->view('posts/index', $data);
