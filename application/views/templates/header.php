@@ -15,6 +15,9 @@
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>posts">Browse</a>
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>about">About</a>
 				    </div>
+				    <ul class="nav navbar-nav navbar-right">
+				    	<a class="nav-item nav-link" href="<?php echo base_url(); ?>posts/create">Signup as vendor</a>
+				    </ul>
 				</div>
 			</div>
 		</nav>
