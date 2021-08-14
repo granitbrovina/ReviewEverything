@@ -30,7 +30,7 @@
 
 		public function delete_post($cid){
 			$this->db->where('cid', $cid);
-			$this->db->delete('Companies');
+			$this->db->delete('Company');
 			return true;
 		}
 	}
