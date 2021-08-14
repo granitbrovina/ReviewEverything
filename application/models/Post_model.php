@@ -24,7 +24,7 @@
 				'summary' => $this->input->post('summary'),
 				'website' => $this->input->post('website'),
 				'contactEmail' => $this->input->post('email'),
-				'logo' => $logo;
+				'logo' => $logo
 			);
 			return $this->db->insert('Company', $data);
 		}
