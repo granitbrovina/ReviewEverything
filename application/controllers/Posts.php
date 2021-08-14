@@ -37,8 +37,23 @@
 				$this->load->view('posts/create', $data);
 				$this->load->view('templates/footer');
 			} else {
-				$this->post_model->create_post();
+				$config['upload_path'] = './assets/images/posts';
+				$config['allowed_types'] = 'jpg|png';
+				$config['max_size'] = '2048';
+				$config['max_width'] = '500';
+				$config['max_height'] = '500';
 
+				$this->load->library('upload', $config);
+
+				if(!$this->upload->do_upload()){
+					$error = array('error' => $this->upload->display_errors());
+					$logo = 'noimage.jpg';
+				} else {
+					$data = array('upload_data' => $this->upload->data());
+					$logo = $_FILES['logo']['name'];
+				}
+
+				$this->post_model->create_post($logo);
 				redirect('posts');
 			}
 		}

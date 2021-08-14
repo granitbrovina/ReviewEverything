@@ -2,7 +2,7 @@
 
 <?php echo validation_errors() ?>
 
-<?php echo form_open('posts/create'); ?>
+<?php echo form_open_multipart('posts/create'); ?>
 <div class="form-group">
     <label>Company name</label>
     <input type="text" class="form-control" name="name" placeholder="Add name">
@@ -21,7 +21,7 @@
   </div>
   <div class="form-group">
 	  <label>Upload logo</label>
-	  <input type="file" name="userfile" size="20">
+	  <input type="file" name="postimage" size="20">
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>

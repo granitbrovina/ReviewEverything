@@ -15,7 +15,7 @@
 			return $query->row_array();
 		}
 
-		public function create_post(){
+		public function create_post($logo){
 			$slug = url_title($this->input->post('name'));
 
 			$data = array (
@@ -23,7 +23,8 @@
 				'slug' => $slug,
 				'summary' => $this->input->post('summary'),
 				'website' => $this->input->post('website'),
-				'contactEmail' => $this->input->post('email')
+				'contactEmail' => $this->input->post('email'),
+				'logo' => $logo;
 			);
 			return $this->db->insert('Company', $data);
 		}
