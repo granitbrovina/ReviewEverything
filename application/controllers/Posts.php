@@ -26,7 +26,7 @@
 		}
 
 		public function create(){
-			$data['title'] = 'Sign up as Vendor';
+			$data['title'] = 'Post a website';
 
 			$this->form_validation->set_rules('name', 'Company name', 'required');
 			$this->form_validation->set_rules('summary', 'Summary', 'required');
@@ -39,23 +39,25 @@
 			} else {
 				$config['upload_path'] = './assets/images/posts';
 				$config['allowed_types'] = 'gif|jpg|png';
-				$config['max_size'] = '2048';
+				$config['max_size'] = '7000';
 				$config['max_width'] = '2000';
 				$config['max_height'] = '2000';
 
 				$this->load->library('upload', $config);
 
-				if(!$this->upload->do_upload()){
-					$errors = array('error' => $this->upload->display_errors());
-					$logo = 'noimage.jpg';
+				if($this->upload->do_upload($image)){
+					print_r($this->upload->data());
+					
+					//$logo = 'noimage.jpg';
 				} else {
-					$data = array('upload_data' => $this->upload->data());
-					$logo = $_FILES['userfile']['name'];
+					//$data = array('upload_data' => $this->upload->data());
+					//$logo = $_FILES['userfile']['name'];
+					$errors = array('error' => $this->upload->display_errors());
 				}
 
-				$this->post_model->create_post($logo);
+				$this->post_model->create_post();
 
-				redirect('posts');
+				//redirect('posts');
 			}
 		}
 
