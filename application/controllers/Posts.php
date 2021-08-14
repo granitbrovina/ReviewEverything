@@ -37,7 +37,7 @@
 				$this->load->view('posts/create', $data);
 				$this->load->view('templates/footer');
 			} else {
-				$config['upload_path'] = './assets/images/posts';
+				$config['upload_path'] = './RE/assets/images/posts';
 				$config['allowed_types'] = 'jpg|png';
 
 				$this->load->library('upload', $config);
