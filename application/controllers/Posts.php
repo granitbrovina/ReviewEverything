@@ -55,9 +55,6 @@
 
 				$this->post_model->create_post($logo);
 
-				// Set message
-				$this->session->set_flashdata('post_created', 'Your post has been created');
-
 				redirect('posts');
 			}
 		}
