@@ -37,20 +37,17 @@
 				$this->load->view('posts/create', $data);
 				$this->load->view('templates/footer');
 			} else {
-				$config['upload_path'] = './RE/assets/images/posts';
+				$config['upload_path'] = './assets/images/posts';
 				$config['allowed_types'] = 'jpg|png';
-				$config['max_size'] = '2048';
-				$config['max_width'] = '2000';
-				$config['max_height'] = '2000';
 
 				$this->load->library('upload', $config);
 
-				if(!$this->upload->do_upload()){
-					$errors = array('error' => $this->upload->display_errors());
-					$logo = 'noimage.jpg';
-				} else {
+				if($this->upload->do_upload('userfile')){
 					$data = array('upload_data' => $this->upload->data());
 					$logo = $_FILES['userfile']['name'];
+				} else {
+					$errors = array('error' => $this->upload->display_errors());
+					$logo = 'noimage.jpg';
 				}
 
 				$this->post_model->create_post($logo);

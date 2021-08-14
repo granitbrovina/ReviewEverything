@@ -20,8 +20,8 @@
     <textarea id="editor1" class="form-control" name="email" placeholder="Add contact email"></textarea>
   </div>
   <div class="form-group">
-	  <label>Upload logo</label>
-	  <input type="file" name="userfile" size="20">
+    <label>Upload Image</label>
+    <input type="file" name="userfile" size="20">
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
