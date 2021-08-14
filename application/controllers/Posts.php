@@ -43,7 +43,7 @@
 				$this->load->library('upload', $config);
 
 				if($this->upload->do_upload('userfile')){
-					$data = array('upload_data' => $this->upload->data());
+					$data = array('upload_data' => $this->upload->data('userfile'));
 					$logo = $_FILES['userfile']['name'];
 				} else {
 					$errors = array('error' => $this->upload->display_errors());
