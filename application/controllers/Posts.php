@@ -43,4 +43,9 @@
 			}
 		}
 
+		public function delete($cid){
+			$this->post_model->delete_post($cid);
+			redirectd('posts');
+		}
+
 	}

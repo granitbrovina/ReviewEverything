@@ -27,4 +27,10 @@
 			);
 			return $this->db->insert('Company', $data);
 		}
+
+		public function delete_post($cid){
+			$this->db->where('cid', $cid);
+			$this->db->delete('Companies');
+			return true;
+		}
 	}
