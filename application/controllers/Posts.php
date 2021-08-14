@@ -50,7 +50,7 @@
 					$logo = 'noimage.jpg';
 				} else {
 					$data = array('upload_data' => $this->upload->data());
-					$logo = $_FILES['logo']['name'];
+					$logo = $_FILES['userfile']['name'];
 				}
 
 				$this->post_model->create_post($logo);
