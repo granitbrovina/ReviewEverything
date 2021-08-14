@@ -28,9 +28,19 @@
 		public function create(){
 			$data['title'] = 'Sign up as Vendor';
 
-			$this->load->view('templates/header');
-			$this->load->view('posts/create', $data);
-			$this->load->view('templates/footer');
+			$this->form_validation->set_rules('name', 'Company name', 'required');
+			$this->form_validation->set_rules('summary', 'Summary', 'required');
+			$this->form_validation->set_rules('website', 'Website', 'required');
+
+			if($this->form_validation->run() === FALSE){
+				$this->load->view('templates/header');
+				$this->load->view('posts/create', $data);
+				$this->load->view('templates/footer');
+			} else {
+				$this->post_model->create_post();
+
+				redirect('posts');
+			}
 		}
 
 	}
