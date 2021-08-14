@@ -25,4 +25,12 @@
 			$this->load->view('templates/footer');
 		}
 
+		public function create(){
+			$data['title'] = 'Sign up as Vendor';
+
+			$this->load->view('templates/header');
+			$this->load->view('posts/create', $data);
+			$this->load->view('templates/footer');
+		}
+
 	}
