@@ -45,7 +45,7 @@
 
 				$this->load->library('upload', $config);
 
-				if($this->upload->do_upload($image)){
+				if($this->upload->do_upload($userfile)){
 					print_r($this->upload->data());
 					
 					//$logo = 'noimage.jpg';
