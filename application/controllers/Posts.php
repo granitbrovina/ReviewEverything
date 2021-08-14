@@ -21,7 +21,7 @@
 			$data['title'] = $data['post']['name'];
 
 			$this->load->view('templates/header');
-			$this->load->view('posts/index', $data);
+			$this->load->view('posts/view', $data);
 			$this->load->view('templates/footer');
 		}
 
