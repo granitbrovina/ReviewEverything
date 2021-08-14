@@ -37,7 +37,7 @@
 				$this->load->view('posts/create', $data);
 				$this->load->view('templates/footer');
 			} else {
-				$config['upload_path'] = './assets/images/posts';
+				$config['upload_path'] = 'https://www.studenti.famnit.upr.si/~89171015/RE/assets/images/posts';
 				$config['allowed_types'] = 'jpg|png';
 				$config['max_size'] = '2048';
 				$config['max_width'] = '2000';
