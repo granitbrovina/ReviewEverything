@@ -46,6 +46,7 @@
 
 				if (!$this->upload->do_upload()) {
 					$errors = array('error' => $this->upload->display_errors());
+					print_r($errors);
 					$post_image = 'noimage.jpg';
 				} else {
 					$data = array('upload_data' => $this->upload->data());
