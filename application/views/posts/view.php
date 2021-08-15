@@ -1,6 +1,6 @@
 <h2><?php echo $post['name']; ?></h2>
 
-<img class="thumbnail" src="<?php echo site_url(); ?>assets/images/<?php echo $post['logo']; ?>" width="100%">
+<img src="<?php echo site_url(); ?>assets/images/<?php echo $post['logo']; ?>">
 
 <div class="post-body">
 	<?php echo $post['summary']; ?>
