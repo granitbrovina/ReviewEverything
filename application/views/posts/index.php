@@ -2,7 +2,7 @@
 	<h3><?php echo $post['name']; ?></h3>
 	<div class="row">
 		<div class="col-md-3">
-			<img src="<?php echo site_url(); ?>assets/images/<?php echo $post['post_image']; ?>">
+			<img src="<?php echo site_url(); ?>assets/images/<?php echo $post['logo']; ?>">
 		</div>
 		<div class="col-md-9">
 			<?php echo $post['summary']; ?>
