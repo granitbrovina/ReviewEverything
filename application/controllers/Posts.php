@@ -39,7 +39,7 @@
 			} else {
 				// upload image
 
-				$config['upload_path'] = './RE/assets/images';
+				$config['upload_path'] = '/RE/assets/images';
 				$config['allowed_types'] = 'jpg|png';
 
 				$this->load->library('upload', $config);
