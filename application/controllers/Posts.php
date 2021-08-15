@@ -56,7 +56,7 @@
 
 				$this->post_model->create_post($post_image);
 
-				//redirect('posts');
+				redirect('posts');
 			}
 		}
 
