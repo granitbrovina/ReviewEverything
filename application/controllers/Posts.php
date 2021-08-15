@@ -40,7 +40,7 @@
 				// upload image
 
 				$config['upload_path'] = './assets/images';
-				$config['allowed_types'] = 'jpg|png';
+				$config['allowed_types'] = 'gif|jpg|png';
 
 				$this->load->library('upload', $config);
 
