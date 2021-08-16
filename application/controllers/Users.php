@@ -37,9 +37,20 @@
 				$this->load->view('templates/footer');
 			} else {
 
-				$this->session->set_flashdata('user_loggedin', 'You are logged in');
+				$username = $this->input-post('username');
+				$password = md5($this->input->post('password'));
 
-				redirect('posts');
+				$user_id = $this->user_model->login($username. $password);
+
+				if ($user_id) {
+					die('Success');
+
+					$this->session->set_flashdata('user_loggedin', 'You are logged in');
+					redirect('posts');					
+				} else {
+					$this->session->set_flashdata('login_failed', 'Login invalid');
+					redirect('users/login');
+				}
 			}
 			
 		}
