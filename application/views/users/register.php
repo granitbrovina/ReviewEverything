@@ -16,7 +16,7 @@
 			<label>Confirm Password</label>
 			<input type="password" class="form-control" name="password2" placeholder="Confirm Password">
 		</div>
+		<button type="submit" class="btn btn-primary btn-block">Sign-up</button>
 	</div>
 </div>
-	<button type="submit" class="btn btn-primary">Sign-up</button>
 <?php echo form_close(); ?>
