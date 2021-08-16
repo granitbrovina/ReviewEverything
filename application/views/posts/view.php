@@ -24,7 +24,7 @@
 	</div>
 	<div class="form-group">
 		<label>Review</label>
-		<textarea type="text" class="form-control"></textarea>
+		<textarea name="body" class="form-control"></textarea>
 	</div>
 	<div class="form-group">
 		<label>Rating</label>
