@@ -20,4 +20,13 @@
 				return false;
 			}
 		}
+
+		public function check_email_exists($email){
+			$query = $this->db->get_where('user', array('email' => $email));
+			if(empty($query->row_array())){
+				return true;
+			} else {
+				return false;
+			}
+		}
 	}
