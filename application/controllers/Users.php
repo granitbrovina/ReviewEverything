@@ -40,7 +40,7 @@
 				$username = $this->input->post('username');
 				$password = md5($this->input->post('password'));
 
-				$user_id = $this->user_model->login($username. $password);
+				$user_id = $this->user_model->login($username, $password);
 
 				if ($user_id) {
 					die('Success');
