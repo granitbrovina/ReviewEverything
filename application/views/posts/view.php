@@ -11,6 +11,18 @@
 	<input type="submit" value="delete" class="btn btn-danger">
 </form>
 <hr>
+<h3>Reviews</h3>
+<?php if($Reviews) : ?>
+	<?php foreach($Reviews as $review) : ?>
+		<div class="well">
+			<h5><?php echo $review['body']; ?> [by <strong><?php echo $review['name']; ?></strong></h5>
+		</div>
+<?php else : ?>
+	<p>No reviews yet. Be the first one to leave a review!</p>
+<?php endif; ?>
+
+
+<hr>
 <h3>Add Review</h3>
 <?php echo validation_errors(); ?>
 <?php echo form_open('comments/create/'.$post['cid']); ?>

@@ -14,4 +14,9 @@
 			);
 			return $this->db->insert('Reviews', $data);
 		}
+
+		public function get_comments($post_id){
+			$query = $this->db->get_where('Reviews', array('cid' => $post_id));
+			return $query->result_array();
+		}
 	}
