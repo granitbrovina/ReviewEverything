@@ -1,4 +1,4 @@
-<h2>Register account</h2>
+<h2 style="margin:auto;">Register account</h2>
 <?php echo validation_errors(); ?>
 
 <?php echo form_open('users/register'); ?>
