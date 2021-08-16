@@ -16,8 +16,9 @@
 
 			} else {
 				$this->comment_model->create_comment($cid);
-				redirect('posts/'.$slug); 
+				//redirect('posts/'.$slug); 
 
+				print_r($this->comment_model->display_errors());
 			}
 		}
 	}
