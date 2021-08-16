@@ -22,10 +22,14 @@
 				    </div>
 				</div>
 				<div class="navbar-nav">
+					<?php if(!$this->session->userdata('logged_in')): ?>
 				      <a class="nav-item nav-link my-2 my-lg-0" href="<?php echo base_url(); ?>users/register">Signup</a>
 				      <a class="nav-item nav-link my-2 my-lg-0" href="<?php echo base_url(); ?>users/login">Login</a>
+					<?php endif; ?>
+					<?php if($this->session->userdata('logged_in')): ?>
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>posts/create">Post a website</a>
 				      <a class="nav-item nav-link my-2 my-lg-0" href="<?php echo base_url(); ?>users/logout">Logout</a>
+					<?php endif; ?>
 				    </div>
 			</div>
 		</nav>
