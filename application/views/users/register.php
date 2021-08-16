@@ -1,9 +1,9 @@
-<h2 style="margin:auto;">Register account</h2>
 <?php echo validation_errors(); ?>
 
 <?php echo form_open('users/register'); ?>
 <div class="row">
 	<div class="col-md-4 col-md-offset-4" style="margin: auto;">
+		<h2 style="margin:auto;">Register account</h2>
 		<div class="form-group">
 			<label>Name</label>
 			<input type="text" class="form-control" name="name" placeholder="Name">
