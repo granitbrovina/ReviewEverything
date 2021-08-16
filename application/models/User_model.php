@@ -9,6 +9,6 @@
 				'password' => $enc_password
 			);
 
-			return $this->db->insert('users', $data);
+			return $this->db->insert('user', $data);
 		}
 	}
