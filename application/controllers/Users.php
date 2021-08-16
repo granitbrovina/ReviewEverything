@@ -25,6 +25,25 @@
 			
 		}
 
+		public function login(){
+			$data['title'] = 'Sign In';
+
+			$this->form_validation->set_rules('username','Username','required');
+			$this->form_validation->set_rules('password','Password','required');
+
+			if ($this->form_validation->run() === FALSE) {
+				$this->load->view('templates/header');
+				$this->load->view('users/login');
+				$this->load->view('templates/footer');
+			} else {
+
+				$this->session->set_flashdata('user_loggedin', 'You are logged in');
+
+				redirect('posts');
+			}
+			
+		}
+
 		function check_username_exists($username){
 			$this->form_validation->set_message('check_username_exists', 'That username is taken, please use a different one.');
 
