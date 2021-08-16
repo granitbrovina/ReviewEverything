@@ -15,7 +15,7 @@
 <?php if($comments) : ?>
 	<?php foreach($comments as $review) : ?>
 		<div class="well">
-			<h5><?php echo $review['body']; ?> [by <strong><?php echo $review['name']; ?></strong></h5>
+			<h5><?php echo $review['body']; ?> [ rated: <?php echo $review['rating']; ?>/5 by <strong><?php echo $review['name']; ?>]</strong></h5>
 		</div>
 	<?php endforeach; ?>
 <?php else : ?>
