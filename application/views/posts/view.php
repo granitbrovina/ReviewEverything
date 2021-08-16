@@ -12,7 +12,7 @@
 </form>
 <hr>
 <h3>Add Review</h3>
-<?php echo form_open('comments/create'.$post['id']); ?>
+<?php echo form_open('comments/create'.$post['cid']); ?>
 	<div class="form-group">
 		<label>Name</label>
 		<input type="text" name="name" class="form-control">
