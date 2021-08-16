@@ -7,10 +7,12 @@
 </div>
 
 <hr>
+<?php if($this->session->userdata('logged_in')): ?>
 <?php echo form_open('/posts/delete/'.$post['cid']); ?>
 	<input type="submit" value="delete" class="btn btn-danger">
 </form>
 <hr>
+<?php endif; ?>
 <h3>Reviews</h3>
 <?php if($comments) : ?>
 	<?php foreach($comments as $review) : ?>
