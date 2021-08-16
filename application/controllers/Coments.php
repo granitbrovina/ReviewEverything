@@ -7,7 +7,7 @@
 			$this->form_validation->set_rules('name', 'Name', 'required');
 			$this->form_validation->set_rules('email', 'Email', 'required');
 			$this->form_validation->set_rules('body', 'Review', 'required');
-			$this->form_validation->set_rules('rating', 'Rating', 'required');
+			$this->form_validation->set_rules('rating', 'rating', 'required');
 
 			if($this->form_validation->run() === FALSE){
 				$this->load->view('templates/header');
