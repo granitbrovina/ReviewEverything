@@ -38,8 +38,6 @@
 		      <label for="rating-2">2</label>
 		      <input type="radio" id="rating-1" name="rating" value="1" />
 		      <label for="rating-1">1</label>
-		      <input type="radio" id="rating-0" name="rating" value="0" />
-		      <label for="rating-0">0</label>
 		    </span>
 		  </fieldset>
 	</div>
