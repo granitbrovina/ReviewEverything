@@ -43,7 +43,12 @@
 				$user_id = $this->user_model->login($username, $password);
 
 				if ($user_id) {
-					die('Success');
+					
+					$use_data = array(
+						'user_id' => $user_id,
+						'username' => $username,
+						'logged_in' => true
+					);
 
 					$this->session->set_flashdata('user_loggedin', 'You are logged in');
 					redirect('posts');					
