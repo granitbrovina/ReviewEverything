@@ -25,6 +25,7 @@
 				      <a class="nav-item nav-link my-2 my-lg-0" href="<?php echo base_url(); ?>users/register">Signup</a>
 				      <a class="nav-item nav-link my-2 my-lg-0" href="<?php echo base_url(); ?>users/login">Login</a>
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>posts/create">Post a website</a>
+				      <a class="nav-item nav-link my-2 my-lg-0" href="<?php echo base_url(); ?>users/logout">Logout</a>
 				    </div>
 			</div>
 		</nav>
@@ -48,4 +49,9 @@
 
 		<?php if($this->session->flashdata('user_loggedin')): ?>
 			<?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_loggedin').'</p>'; ?>
+		<?php endif; ?>
+
+
+		<?php if($this->session->flashdata('user_logout')): ?>
+			<?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_logout').'</p>'; ?>
 		<?php endif; ?>

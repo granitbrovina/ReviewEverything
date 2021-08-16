@@ -43,7 +43,7 @@
 				$user_id = $this->user_model->login($username, $password);
 
 				if ($user_id) {
-					
+
 					$use_data = array(
 						'user_id' => $user_id,
 						'username' => $username,
@@ -58,6 +58,15 @@
 				}
 			}
 			
+		}
+
+		public function logout(){
+			$this->session->unset_userdata('logged_in');
+			$this->session->unset_userdata('user_id');
+			$this->session->unset_userdata('username');
+
+			$this->session->set_flashdata('user_logout', 'You are logged out');
+			redirect('users/login');	
 		}
 
 		function check_username_exists($username){
