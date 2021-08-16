@@ -23,7 +23,7 @@
 				    </div>
 				</div>
 				<div class="navbar-nav">
-				      <a class="nav-item nav-link my-2 my-lg-0" href="<?php echo base_url(); ?>users/registration">Signup</a>
+				      <a class="nav-item nav-link my-2 my-lg-0" href="<?php echo base_url(); ?>users/register">Signup</a>
 				    </div>
 			</div>
 		</nav>
