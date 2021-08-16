@@ -3,6 +3,7 @@
 		<title>Review Everything</title>
 		<link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css" type="text/css">
 		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" type="text/css">
+		<meta charset="UTF-8">
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">

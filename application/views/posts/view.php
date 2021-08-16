@@ -14,14 +14,22 @@
 <h3>Add Review</h3>
 <?php echo form_open('comments/create'.$post['cid']); ?>
 	<div class="form-group">
-		<fieldset class="rating">
-		    <legend>Please rate:</legend>
-		    	<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-		    	<input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-		    	<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-		    	<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-		    	<input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-		</fieldset>
+		  <fieldset>
+		    <span class="star-cb-group">
+		      <input type="radio" id="rating-5" name="rating" value="5" />
+		      <label for="rating-5">5</label>
+		      <input type="radio" id="rating-4" name="rating" value="4" checked="checked" />
+		      <label for="rating-4">4</label>
+		      <input type="radio" id="rating-3" name="rating" value="3" />
+		      <label for="rating-3">3</label>
+		      <input type="radio" id="rating-2" name="rating" value="2" />
+		      <label for="rating-2">2</label>
+		      <input type="radio" id="rating-1" name="rating" value="1" />
+		      <label for="rating-1">1</label>
+		      <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" />
+		      <label for="rating-0">0</label>
+		    </span>
+		  </fieldset>
 	</div>
 	<hr>
 	<div class="form-group">
