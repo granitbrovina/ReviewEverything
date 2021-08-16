@@ -12,8 +12,8 @@
 </form>
 <hr>
 <h3>Reviews</h3>
-<?php if($Reviews) : ?>
-	<?php foreach($Reviews as $review) : ?>
+<?php if($comments) : ?>
+	<?php foreach($comments as $review) : ?>
 		<div class="well">
 			<h5><?php echo $review['body']; ?> [by <strong><?php echo $review['name']; ?></strong></h5>
 		</div>
