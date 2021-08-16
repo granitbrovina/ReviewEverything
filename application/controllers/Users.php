@@ -37,7 +37,7 @@
 				$this->load->view('templates/footer');
 			} else {
 
-				$username = $this->input-post('username');
+				$username = $this->input->post('username');
 				$password = md5($this->input->post('password'));
 
 				$user_id = $this->user_model->login($username. $password);
