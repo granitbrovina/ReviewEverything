@@ -23,8 +23,7 @@
 		    	<input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
 		</fieldset>
 	</div>
-	<br>
-	<br>
+	<hr>
 	<div class="form-group">
 		<label>Name</label>
 		<input type="text" name="name" class="form-control">
