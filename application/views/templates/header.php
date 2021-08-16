@@ -14,7 +14,7 @@
 				<div class="navbar-header">
 					<a class="navbar-brand" href="<?php echo base_url(); ?>">Review Everything</a>
         		</div>
-        		<div class="collapse navbar-collapse" id="navbar">
+        		
 				    <div class="navbar-nav">
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>">Home</a>
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>posts">Browse</a>
@@ -22,7 +22,7 @@
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>about">About</a>
 				      <a class="nav-item nav-link my-2 my-lg-0" href="<?php echo base_url(); ?>users/registration">Signup</a>
 				    </div>
-				</div>
+				
 			</div>
 		</nav>
 		<div class="container">
