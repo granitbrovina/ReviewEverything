@@ -12,18 +12,13 @@
 </form>
 <hr>
 <h3>Reviews</h3>
-<div class="card" style="width: 100%">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
 <?php if($comments) : ?>
 	<?php foreach($comments as $review) : ?>
-		<div class="well">
-			
-			<h5><?php echo $review['body']; ?> [ rated: <?php echo $review['rating']; ?>/5 by <strong><?php echo $review['name']; ?></strong>]</h5>
-		
+		<div class="card" style="width: 100%">
+			<div class="card-body">
+				<h5 class="card-title">Rated: <?php echo $review['rating']; ?>/5 by <strong><?php echo $review['name']; ?></strong></h5>
+				<p class="card-text"><?php echo $review['body']; ?></p>
+			</div>
 		</div>
 	<?php endforeach; ?>
 <?php else : ?>
