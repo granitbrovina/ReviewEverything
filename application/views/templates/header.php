@@ -28,3 +28,15 @@
 			</div>
 		</nav>
 		<div class="container">
+
+		<?php if($this->session->flashdata('user_registered')): ?>
+			<?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_registered').'</p>'; ?>
+		<?php endif; ?>
+
+		<?php if($this->session->flashdata('post_created')): ?>
+			<?php echo '<p class="alert alert-success">'.$this->session->flashdata('post_created').'</p>'; ?>
+		<?php endif; ?>
+
+		<?php if($this->session->flashdata('post_deleted')): ?>
+			<?php echo '<p class="alert alert-success">'.$this->session->flashdata('post_deleted').'</p>'; ?>
+		<?php endif; ?>

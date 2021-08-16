@@ -58,12 +58,17 @@
 
 				$this->post_model->create_post($post_image);
 
+				$this->session->set_flashdata('post_created', 'Your website has been submitted');
+
 				redirect('posts');
 			}
 		}
 
 		public function delete($cid){
 			$this->post_model->delete_post($cid);
+
+			$this->session->set_flashdata('post_deleted', 'Entry has been deleted');
+
 			redirect('posts');
 		}
 
