@@ -14,6 +14,18 @@
 <h3>Add Review</h3>
 <?php echo form_open('comments/create'.$post['cid']); ?>
 	<div class="form-group">
+		<label>Name</label>
+		<input type="text" name="name" class="form-control">
+	</div>
+	<div class="form-group">
+		<label>Email</label>
+		<input type="text" name="email" class="form-control">
+	</div>
+	<div class="form-group">
+		<label>Review</label>
+		<textarea type="text" class="form-control"></textarea>
+	</div>
+	<div class="form-group">
 		  <fieldset>
 		    <span class="star-cb-group">
 		      <input type="radio" id="rating-5" name="rating" value="5" />
@@ -30,19 +42,6 @@
 		      <label for="rating-0">0</label>
 		    </span>
 		  </fieldset>
-	</div>
-	<hr>
-	<div class="form-group">
-		<label>Name</label>
-		<input type="text" name="name" class="form-control">
-	</div>
-	<div class="form-group">
-		<label>Email</label>
-		<input type="text" name="email" class="form-control">
-	</div>
-	<div class="form-group">
-		<label>Review</label>
-		<textarea type="text" class="form-control"></textarea>
 	</div>
 	<input type="hidden" name="slug" value="<?php echo $post['slug']; ?>">
 	<button class="btn btn-primary" type="submit">Leave review</button>
