@@ -70,6 +70,10 @@
 		}
 
 		public function delete($cid){
+			if (!$this->session->userdata('logged_in')) {
+				redirect('users/login');
+			}
+
 			$this->post_model->delete_post($cid);
 
 			$this->session->set_flashdata('post_deleted', 'Entry has been deleted');
