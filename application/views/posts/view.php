@@ -14,7 +14,7 @@
 <h3>Reviews</h3>
 <?php if($comments) : ?>
 	<?php foreach($comments as $review) : ?>
-		<div class="well-lg">
+		<div class="well">
 			
 			<h5><?php echo $review['body']; ?> [ rated: <?php echo $review['rating']; ?>/5 by <strong><?php echo $review['name']; ?></strong>]</h5>
 		
