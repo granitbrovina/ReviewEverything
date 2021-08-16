@@ -13,6 +13,6 @@
 				'rating' => $this->input->post('rating')
 			);
 
-			return $this->db->insert('comments', $data);
+			return $this->db->insert('Reviews', $data);
 		}
 	}
