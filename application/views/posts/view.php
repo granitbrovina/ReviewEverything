@@ -12,6 +12,7 @@
 </form>
 <hr>
 <h3>Add Review</h3>
+<?php validation_errors(); ?>
 <?php echo form_open('comments/create'.$post['cid']); ?>
 	<div class="form-group">
 		<label>Name</label>
@@ -26,6 +27,7 @@
 		<textarea type="text" class="form-control"></textarea>
 	</div>
 	<div class="form-group">
+		<label>Rating</label>
 		  <fieldset>
 		    <span class="star-cb-group">
 		      <input type="radio" id="rating-5" name="rating" value="5" />
