@@ -13,7 +13,7 @@
 <hr>
 <h3>Add Review</h3>
 <?php echo validation_errors(); ?>
-<?php echo form_open('comments/create'.$post['cid']); ?>
+<?php echo form_open('comments/create/'.$post['cid']); ?>
 	<div class="form-group">
 		<label>Name</label>
 		<input type="text" name="name" class="form-control">
