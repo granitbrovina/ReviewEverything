@@ -20,6 +20,7 @@
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>posts">Browse</a>
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>posts/create">Post a website</a>
 				      <a class="nav-item nav-link" href="<?php echo base_url(); ?>about">About</a>
+				      <a class="nav-item nav-link my-2 my-lg-0" href="<?php echo base_url(); ?>users/registration">Signup</a>
 				    </div>
 				</div>
 			</div>

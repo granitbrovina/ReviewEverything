@@ -14,7 +14,13 @@
 				$this->load->view('users/register');
 				$this->load->view('templates/footer');
 			} else {
-				die('Continue');
+				$enc_password = md5($this->input->post('password'));
+
+				$this->user_model->register($enc_password);
+
+				$this->session->set_flashdata('user_registered', 'You are now registered and can log in');
+
+				redirect('posts');
 			}
 			
 		}
