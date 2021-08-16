@@ -14,7 +14,7 @@
 <h3>Reviews</h3>
 <?php if($comments) : ?>
 	<?php foreach($comments as $review) : ?>
-		<div class="card" style="width: 100%; background-color: grey;">
+		<div class="card" style="width: 100%; background-color: #ced4da;">
 			<div class="card-body">
 				<h5 class="card-title">Rated: <?php echo $review['rating']; ?>/5 by <strong><?php echo $review['name']; ?></strong></h5>
 				<p class="card-text"><?php echo $review['body']; ?></p>
